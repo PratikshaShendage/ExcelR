@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseduo element </title>
+    <style>
+        #p1{
+            background-color: rgb(196, 230, 241);
+        }
+         
+        #p1::first-letter{
+           
+            color: red;
+            font-size: 20px;
+        }
+        #p1::first-line{
+            color: rgb(42, 165, 104);
+        }
+         #p2::after{
+            content: "😊😊";
+
+         }
+         #p2::before{
+            content: "😍😍";
+            
+         }
+         #p1::selection{
+            background-color: brown;
+         }
+      ::marker{
+        color: blueviolet;
+        font-size: 20px;
+        
+      }
+
+    </style>
+</head>
+<body>
+    <h1>pseudo element</h1>
+    <p>it is used to style the  specific part of an element  </p>
+    <p>it indicates width with :: (double colon) </p>
+<hr>
+
+    <p id="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Eligendi dignissimos illo illum quam repellat debitis enim 
+        delectus modi culpa! Officiis, doloribus vel. Quam assumenda 
+        doloribus officiis ad obcaecati nam, quisquam similique ducimus
+         neque expedita ipsam laboriosam vel adipisci eveniet aliquid error 
+         eligendi repellat voluptates, magni iste aliquam quo. Aut eos temporibus
+          rem assumenda dolore perferendis iure dolor, nobis ea deserunt qui vel sint deleniti
+           dolorum laboriosam voluptatibus reprehenderit non, quod animi libero enim voluptatem.
+            Laborum error voluptate eligendi fugit repellendus recusandae aut ut illo fuga deleniti 
+            accusamus placeat soluta,qui voluptates nesciunt sit distinctio dolorem, dicta, libero
+             doloremque. Ipsam, quia?</p>
+
+             <p  id="p2"> This is a content  </p>
+
+
+     <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+     </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
