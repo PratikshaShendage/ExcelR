@@ -2,7 +2,7 @@ Git
 ---------------------------------
 It is a version control system.
 
-1st time :
+--------1st time :
 git init 
 git add .
 git commit -m "msg"
@@ -12,3 +12,16 @@ git remote add origin repository link(paste)
 git push origin master  / main---git push origin main --force
 
 --------------------------------------------------
+----- from 2nd time to same repository
+git add .
+git commit -m "msg"
+git push origin master
+
+-------------------------------------------------------
+--------- Working on different repository
+
+git init
+git add .
+git commit -m "msg"
+git remote add origin repository link (Paste)
+git push origin master

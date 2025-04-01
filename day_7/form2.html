@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+    <style>
+      form {
+        border: 2px solid black;
+        width: 500px;
+        margin: 50px auto;
+        text-align: center;
+      }
+
+      button {
+        color: blueviolet;
+        background-color: aqua;
+      }
+      
+      fieldset{
+        width: 50px;
+        margin: 50px;
+      }
+
+
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Form2</h1>
+    <!-- basic fields - legend - for head of box -->
+     <!-- method get and post  the get- for diplay data but post for hide the data -->
+     <!-- fieldset - Multiple field are required  -->
+     <form action="" method="get">
+      <fieldset>
+        <legend>Basic Information</legend>
+        <label for="fname">First Name :</label>
+        <input type="text" placeholder="Enter the firstname" id="fname" name="Pratiksha" />
+        <br>
+
+        <label for="mname">Middle Name :</label>
+        <input type="text" placeholder="Enter the middlename" id="mname" name="Mahadev" />
+      <br>
+
+        <label for="lname">Last Name :</label>
+        <input type="text" placeholder="Enter the Lastname" id="lname" name="Shendage" />
+
+<br><br>
+        
+    <label for="age">Age :</label>
+    <input type="number" name="age" min="10" max="100">
+
+<br><br>
+  <!-- Gender - radio button value is important  -->
+   <!-- radio button is only one option purpuse -->
+    <!-- for(label) and id(input) for same the hidhlight purpose -->
+
+    <label for="gen"> Gender:</label>
+   <br>
+    <input type="radio" name="gen" id="male" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" name="gen" id="female" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" name="gen" id="other" value="other">
+    <label for="other">Other</label>
+     
+
+    <br><br>
+    <!-- type - date for calender and datetime for time display -->
+
+    <label for="dob">Date od Birth</label>
+    <input type="date" name="dob" id="dob" >
+<br><br>
+    <label for="">Upload image :</label>
+    <input type="file" name="image" id="image" accept="image/*">
+
+      </fieldset>
+
+<br>
+
+
+
+
+
+
+      <fieldset>
+<!-- checkbox - multiple options -->
+        <legend>Favorites</legend>
+        <label for="color">Favorite color</label>
+        <input type="checkbox" name="red" id="red">
+        <label for="red">Red</label>
+
+        <input type="checkbox" name="green" id="green">
+        <label for="green">green</label>
+
+        <input type="checkbox" name="yellow" id="yellow">
+        <label for="yellow">yellow</label>
+
+        <input type="checkbox" name="blue" id="blue">
+        <label for="red">blue</label>
+
+        <br><br>
+ <!-- select is need to write value in element -->
+        <label for="item">Favorite Food Item</label>
+        <select name="item" id="item">
+            <option value="">select food</option>
+
+            <optgroup label="Tiffins">
+                <option value="idly">idly</option>
+                    <option value="dosa">dosa</option>
+                
+            </optgroup>
+
+            <optgroup label="Non-veg">
+                <option value="bir">Biryani</option>
+                    <option value="fr">fried Rice</option>
+                
+            </optgroup>
+               
+        </select>
+        <br><br>
+
+
+
+  <lable for="">Favorite Subject</lable>
+  <select name="sub" id="sub" multiple size="2">
+    <option value="math">Math</option>
+    <option value="sci">Science</option>
+    <option value="his">His</option>
+    <option value="enf">Eng</option>
+  </select>
+
+<br><br>
+<!-- datalist has no needed the value for disply -->
+    <label for="favgame">Favorite game </label>
+    <input name="game" id="game" list="games">
+    <datalist id="games">
+        <option value="cricket"></option>
+        <option value="football"></option>
+        <option value="hockey"></option>
+    </datalist>
+
+
+
+
+
+      </fieldset>
+
+
+
+
+
+
+
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter the email " name="p@gmail">
+<br>
+       <label for="phone">Phone No :</label>
+       <input type="tel" name="phone" placeholder="Enter your 10 digit number" pattern="[0-9]{10}">
+<br>
+       <label for="pwd">Password</label>
+       <input type="password" name="pwd" id="pwd" required>
+
+       <br>
+
+       <label for="add">Address</label>
+       <textarea name="address" id="add" placeholder="enter the address"></textarea>
+<br>
+
+
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      
+
+
+    </form>
+  </body>
+</html>
