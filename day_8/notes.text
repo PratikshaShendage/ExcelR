@@ -1,0 +1,19 @@
+<h1>Flex</h1>
+    <hr>
+    <p>Is is used to align elements</p>
+    <p>it is used to distribute space around elements</p>
+    <p>it will arrage element in cross axis and main axis</p>
+
+    <p>flex container is main division of flex</p>
+     <p>flex items are child of flex container</p>
+    <p>flext container is used to wrap the flex items </p>
+    <p>display : flex is used to make flex container </p>
+    <p>the default direction is row (left to right)</p>
+    <p> flex direction : row-reverse ; cloumn ; column-reverse is used to change the direction</p>
+    
+    
+    row -- (left to right)  x-axis (main axis) y(cross axis)
+
+     row -- (top to bottom)  y-axis (main axis) x(cross axis)
+
+     
