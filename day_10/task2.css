@@ -54,31 +54,23 @@ body {
     grid-area: section1;
     background-color: rgb(52, 225, 225);
 }
-.section1 {
-  grid-area: section1;
-  background-color: rgb(52, 225, 225);
-}
+
 .section2{
     grid-area: section2;    
     background-color: rgb(229, 105, 22);
 }
-.section2 {
-  grid-area: section2;
-  background-color: rgb(229, 105, 22);
-}
+
 .content{
     grid-area: content;
     background-color: rgb(85, 0, 255);
 }
-.content {
-  grid-area: content;
-  background-color: rgb(85, 0, 255);
-}
+
 .footer {
   border: 1px solid red;
   height: 10%;
 }
 
+/* desklop */
 @media  screen and (max-width: 1024px) {
     .main{ 
         grid-template-areas: "section1"
@@ -87,11 +79,13 @@ body {
     }
 }
 
+/* i-pad */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .nav {
     justify-content: space-evenly;
   }
 }
+/* Mobile */
 @media screen and (max-width: 768px) and (min-width: 300px) {
   .nav {
     
