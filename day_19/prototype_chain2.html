@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype chain 2</title>
+</head>
+<body>
+    <script>
+     const Animal={
+        // obj literal used here
+        species:"Animal",
+
+
+        eat:function(){   // add eat fun extra 
+            console.log("Animal Easts");
+        }
+
+     };
+     console.log(Animal);
+     console.log(Animal.eat());
+
+
+
+
+
+     // following ex shred prototype(inheritance) animal 
+   const Dog=Object.create(Animal);//creating Dog objest
+   Dog.bark=function(){
+    console.log("Dog barks");
+   }; 
+
+   Dog.eat = function(){
+    console.log("dog eats");
+    
+   };  // overiding eat method for dog object
+
+   console.log(Dog);
+   console.log(Dog.eat()); //calling dog eat method
+
+
+
+
+
+
+
+
+
+
+     // following ex shred prototype(inheritance) animal 
+
+     const cat=Object.create(Animal);//creating Dog
+     cat.color ="white";
+     cat.meow=function(){
+      console.log("cat meows");
+
+      cat.eat= function(){
+        console.log("cat eats");
+        
+       };  // overiding eat method for cat object
+
+      
+     };
+     console.log(cat);
+     console.log(cat.eat());
+
+  
+
+
+  //   const Beagle =;
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

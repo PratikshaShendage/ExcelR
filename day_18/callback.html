@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack function</title>
+</head>
+<body>
+<script>
+
+    function boilwater(){
+        setTimeout((callback)=>{
+        console.log("Boiling Water");
+        callback();
+       },1000);
+    }
+
+    function boilcoffee(callback){
+        setTimeout(()=>{
+            console.log("Boiling coffee");
+            callback();
+           },2000);
+        }
+    
+    function addsugar(callback){
+        setTimeout(()=>{
+            console.log("add sugar");
+            callback();
+           },3000);
+        }
+
+    
+    function addmilk(callback){
+        setTimeout(()=>{
+            console.log("add milk");
+            callback();
+           },1000);
+        }
+   /* boilwater();
+    boilcoffee();
+    addsugar();
+    addmilk(); */
+
+    boilwater(()=>{
+        boilcoffee(()=>{
+            addsugar(()=>{
+                addmilk();
+
+                });
+            });
+        });
+    
+
+console.log("coffee is ready to be served !")
+
+
+
+
+
+</script>
+</body>
+</html>

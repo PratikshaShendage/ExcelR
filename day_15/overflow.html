@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        height: 100px;
+        background-color: brown;
+      
+
+    }
+    .one{
+        overflow:visible ;
+    }
+
+    .two{
+        overflow:hidden ;
+    }
+
+    .three{
+        overflow:scroll ;
+    }
+
+    .four{
+        overflow-x: scroll
+        ;
+    }
+
+</style>
+<body>
+    <h1>Overflow</h1>
+   <p> it is used to hide/scroll the overflow content</p>
+   <p>it will work for block level element and we need to mention a perticular height</p>
+   <p> its a propertuy of class</p>
+  <pre>
+    overflow: visible/hidden/scroll/auto;
+    overflow-x:(left/right)
+    overflow-y:(top/bottom)
+
+  </pre>
+
+
+    <br><br>
+    <div class="box one">
+        <h2>This is visible /default</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ullam esse illum praesentium quo temporibus nisi cupiditate 
+        qui repudiandae! Repudiandae doloribus expedita illo qui temporibus
+        a ab accusamus, consequuntur autem ullam, consequatur veniam vitae 
+        commodi quos laboriosam reprehenderit asperiores nulla iste.
+        Et blanditiis reprehenderit obcaecati rerum
+        facilis quisquam vitae voluptate repudiandae,
+        modi aspernatur, aliquam accusantium corrupti.
+    </div>
+
+<br><br><br> <br><br><br> <br><br><br> <br><br><br>
+    <div class="box two">
+        <h2>This is hidden</h2>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ullam esse illum praesentium quo temporibus nisi cupiditate 
+        qui repudiandae! Repudiandae doloribus expedita illo qui temporibus
+        a ab accusamus, consequuntur autem ullam, consequatur veniam vitae 
+        commodi quos laboriosam reprehenderit asperiores nulla iste.
+        Et blanditiis reprehenderit obcaecati rerum
+        facilis quisquam vitae voluptate repudiandae,
+        modi aspernatur, aliquam accusantium corrupti.
+        </div>
+
+<br><br><br> <br><br><br>
+
+        <div class="box three">
+        <h2>This is scroll</h2>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ullam esse illum praesentium quo temporibus nisi cupiditate 
+            qui repudiandae! Repudiandae doloribus expedita illo qui temporibus
+            a ab accusamus, consequuntur autem ullam, consequatur veniam vitae 
+            commodi quos laboriosam reprehenderit asperiores nulla iste.
+            Et blanditiis reprehenderit obcaecati rerum
+            facilis quisquam vitae voluptate repudiandae,
+            modi aspernatur, aliquam accusantium corrupti.
+            </div>
+
+            <br><br><br> <br><br><br>
+
+            <div class="box four">
+                <h2>This is scroll</h2>
+        
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Ullam esse illum praesentium quo temporibus nisi cupiditate 
+                   qui repudiandae! Repudiandae doloribus expedita illo qui temporibus
+                   a ab accusamus, consequuntur autem ullam, consequatur veniam vitae 
+                   commodi quos laboriosam reprehenderit asperiores nulla iste.
+                   Et blanditiis reprehenderit obcaecati rerum
+                   facilis quisquam vitae voluptate repudiandae,
+                    modi aspernatur, aliquam accusantium corrupti.
+                    
+                    </div>
+
+
+</body>
+</html>

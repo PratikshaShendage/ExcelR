@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Variable2</title>
+</head>
+<body>
+    <h1>Variable</h1>
+    <p>It is used to store data /value and its acts like a container</p>
+    <P>Based on declaration</P>
+    <ol>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ol>
+    <script>
+//-----------------------------------DataTypes--------------------------------------------------
+
+//===========var----------==============
+       var a=10;
+       console.log(a); //declare and assigning 
+
+       var b=20;
+       console.log(b);// redeclaration
+
+       b=30;
+       console.log(b);// reinitialize
+
+       var b;
+       console.log(b); //undefined
+
+      // ===============let ==========================
+
+      let c=50;//declare and assigning 
+      console.log(c);
+
+      c=50;
+      console.log(c);//  reinitialize
+
+      //==============Const========================
+      const p=66;
+       console.log(a); //declare and assigning 
+
+     //  const q=20;
+     //  console.log(q);// redeclaration
+
+    //   q=30;
+      // console.log(q);// reinitialize
+
+     //  const q;
+  //     console.log(q); //undefined
+
+
+//  ================== Function ==================================================
+
+function example(){
+    var x=10;
+    let y=20;
+    const z=30;
+
+    console.log(x,y,z ,"inside function before if ");
+
+    if(true){
+        var x=40;
+        let y=50;
+        const z=60;
+
+    console.log(x,y,z,"inside block");
+        
+
+    }
+
+    console.log(x,y,z ,"inside function after if ");
+}
+
+example();
+
+function example2(){
+    const data1="hello";
+    console.log(data1);
+    if(true){
+        const data1="hii";
+    console.log(data1);
+
+    }
+    console.log(data1);
+}
+
+example2();
+
+
+function example3(){
+    let data2="good";
+    console.log(data2);
+    if(true){
+        const data2="very good";
+    console.log(data2);
+
+    }
+    console.log(data2);
+}
+
+example3();
+
+
+    </script>
+</body>
+</html>

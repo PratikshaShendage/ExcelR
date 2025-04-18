@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype_chain</title>
+</head>
+<body>
+    <script>
+
+        //object literal
+        const base={
+            start(){
+                console.log('Base start');
+            }
+        }
+        function Animal(name){
+            this.name=name;
+
+        }
+
+        Animal.prototype=base; // setting prototype of Animal to base object
+        let a1=new Animal("jullie");
+        console.log(a1.name); //dog
+        console.log(a1);
+        console.log(a1.start);//Base start
+
+        // another example
+
+        const PetAnimal= Object.create(Animal.prototype);
+
+        PetAnimal.play=function(){
+            console.log("PetAnimal play");
+        }
+        console.log(PetAnimal);
+        console.log(PetAnimal.play());
+        // called shared properties
+
+
+
+    </script>
+</body>
+</html>

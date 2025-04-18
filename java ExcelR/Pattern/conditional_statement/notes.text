@@ -1,0 +1,50 @@
+conditional statement
+
+if(condition)
+{
+    //if condition 
+}
+
+
+=================== else if ==================================
+syntax :
+
+if(condition){
+    //if condition satisfy ,if block will execute
+}
+
+else{
+
+    //condition not satisfy ,execute else block
+
+}
+
+note :
+in a block we are having only one statement there flower braces are not required.
+in a block if we are having more than one line statement ,then flower braces are required.
+
+
+
+===============else if ladder :================
+
+syntax
+
+if(condition1)
+{
+
+}
+else if (condition2)
+{
+
+}
+else if(condition3)
+'
+'
+'
+'
+'
+'
+else{
+
+    it is not mandatory to write 
+}

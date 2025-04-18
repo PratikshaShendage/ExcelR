@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+        function boilwater(){
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log("boiling water");
+                    resolve();
+                },2000
+            );
+            });
+
+        }
+
+
+        function boilcoffee(){
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log("boiling coffee");
+                    resolve();
+                },3000
+            );
+            });
+
+        }
+
+        function addmilk(){
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log("add milk");
+                    resolve();
+                },4000
+            );
+            });
+
+        }
+
+        function addsugar(){
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    console.log("add sugar");
+                    resolve();
+                },5000
+            );
+            });
+
+        }
+       
+        boilwater()
+        .then(()=>boilcoffee())
+        .then(()=>addmilk())
+        .then(()=>addsugar())
+        .then(() => console.log("Coffee is ready to be served!"))
+        .catch(()=>{
+            console.error("Error:",error);
+        }
+        );
+
+    </script>
+</body>
+</html>

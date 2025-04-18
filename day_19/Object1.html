@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+    <script>
+     // 1.construction function - used new keyword
+        function Person(){
+            //console.log();
+        }
+        let p1=new Person();
+        console.log(p1);
+       // new Person();
+
+
+       // 2. 
+       function Person2(name1){
+        this.name=name1; // this.name is a property of the person2 object
+        }
+       let p2=new Person2("Patu");
+       console.log(p2);
+
+           let p3={
+           // "name":'patu';
+           }
+           console.log(p3);
+
+
+
+
+  //  Class Object    
+
+
+  class Person3{
+
+    constructor(name1){
+        this.name=name1;
+    }
+
+    getName(){
+        return this.name;
+    }
+  }
+let p4=new Person3("Pratiksha");
+console.log(p4);
+console.log(p4.getName());
+console.log(p4.name);// accessing name property of p4 object.
+
+
+    </script>
+</body>
+</html>
